@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#app {
+    width: 80%;
+    max-width: 800px; /* Adjusted width */
+    height: 90vh; /* Adjusted height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%; /* Makes the logo cover the width */
+    max-width: 600px; /* Maximum size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+button {
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 100px); /* Adjust height to account for logo and padding */
+    overflow-y: auto; /* Makes the list scrollable */
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+li:hover {
+    background-color: #eee;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.qr-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries for iPad */
+@media (max-width: 768px) {
+    #app {
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+    }
+
+    li {
+        padding: 8px;
+    }
+}
